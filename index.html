@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Events</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button">Click here to change background color</button>
+
+      <div class="slider">
+        <div class="slide"><img src="nature-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="nature-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="nature-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="nature-4.jpg" alt="Photo 4" /></div>
+        <div class="slide"><img src="nature-5.jpg" alt="Photo 5" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+
+      <div class="tab-component">
+        <div class="tab-box">
+          <button class="tab-btn active">Home</button>
+          <button class="tab-btn">About Us</button>
+          <button class="tab-btn">Blog</button>
+          <div class="line"></div>
+        </div>
+        <div class="content-box">
+          <div class="content active">
+            <h2>Home</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet veritatis odio?
+            </p>
+          </div>
+          <div class="content">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet veritatis odio?
+            </p>
+          </div>
+          <div class="content">
+            <h2>Blog</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              eveniet veritatis odio?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <form method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            required
+            minlength="8"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
